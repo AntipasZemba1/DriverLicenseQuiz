@@ -20,6 +20,7 @@ A bilingual (English/French) interactive driving license quiz application built 
 ## 📷 Screenshots
 
 
+---
 
 ## 🌍 Languages Supported
 
