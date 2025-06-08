@@ -126,3 +126,18 @@ class QuizApp:
         self.progress_var = tk.DoubleVar()
         self.style = ttk.Style()
         self.dark_mode = False
+
+        self.apply_theme()
+        self.show_welcome_screen()
+
+    def apply_theme(self):
+        if self.dark_mode:
+            self.root.configure(bg="#2e2e2e")
+            self.style.configure("TLabel", background="#2e2e2e", foreground="white")
+            self.style.configure("TRadiobutton", background="#2e2e2e", foreground="white")
+            self.style.configure("TButton", background="#444", foreground="white")
+        else:
+            self.root.configure(bg="SystemButtonFace")
+            self.style.configure("TLabel", background="SystemButtonFace", foreground="black")
+            self.style.configure("TRadiobutton", background="SystemButtonFace", foreground="black")
+            self.style.configure("TButton", background="SystemButtonFace", foreground="black")
