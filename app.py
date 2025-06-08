@@ -108,7 +108,7 @@ questions = [
              "C", "Alcohol & Driving")
 ]
 
-# Main Quiz GUI App
+# --- Main Quiz GUI App ---
 class QuizApp:
     def __init__(self, root):
         self.root = root
@@ -120,7 +120,7 @@ class QuizApp:
         self.score = 0
         self.current_q = 0
         self.selected_answer = tk.StringVar()
-        self.time_limited = 30
+        self.time_limit = 30
         self.remaining_time = self.time_limit
         self.question_active = False
         self.progress_var = tk.DoubleVar()
