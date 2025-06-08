@@ -125,27 +125,27 @@ class QuizApp:
         self.question_active = False
         self.progress_var = tk.DoubleVar()
         self.style = ttk.Style()
-        self.dark_mode = False
+        # self.dark_mode = False
 
         self.apply_theme()
         self.show_welcome_screen()
 
-    def apply_theme(self):
-        if self.dark_mode:
-            self.root.configure(bg="#2e2e2e")
-            self.style.configure("TLabel", background="#2e2e2e", foreground="white")
-            self.style.configure("TRadiobutton", background="#2e2e2e", foreground="white")
-            self.style.configure("TButton", background="#444", foreground="white")
-        else:
-            self.root.configure(bg="SystemButtonFace")
-            self.style.configure("TLabel", background="SystemButtonFace", foreground="black")
-            self.style.configure("TRadiobutton", background="SystemButtonFace", foreground="black")
-            self.style.configure("TButton", background="SystemButtonFace", foreground="black")
+    # def apply_theme(self):
+    #     if self.dark_mode:
+    #         self.root.configure(bg="#2e2e2e")
+    #         self.style.configure("TLabel", background="#2e2e2e", foreground="white")
+    #         self.style.configure("TRadiobutton", background="#2e2e2e", foreground="white")
+    #         self.style.configure("TButton", background="#444", foreground="white")
+    #     else:
+    #         self.root.configure(bg="SystemButtonFace")
+    #         self.style.configure("TLabel", background="SystemButtonFace", foreground="black")
+    #         self.style.configure("TRadiobutton", background="SystemButtonFace", foreground="black")
+    #         self.style.configure("TButton", background="SystemButtonFace", foreground="black")
 
-    def toggle_theme(self):
-        self.dark_mode = not self.dark_mode
-        self.apply_theme()
-        self.show_question()
+    # def toggle_theme(self):
+    #     self.dark_mode = not self.dark_mode
+    #     self.apply_theme()
+    #     self.show_question()
 
     def clear_window(self):
         for widget in self.root.winfo_children():
@@ -251,9 +251,9 @@ class QuizApp:
         progress_bar.pack(side="left", padx=10)
         self.progress_var.set(self.current_q + 1)
 
-        # Theme toggle
-        theme_btn_text = "🌙 Switch to Dark Mode" if not self.dark_mode else "☀️ Switch to Light Mode"
-        ttk.Button(self.root, text=theme_btn_text, command=self.toggle_theme).pack(pady=5)
+        # # Theme toggle
+        # theme_btn_text = "🌙 Switch to Dark Mode" if not self.dark_mode else "☀️ Switch to Light Mode"
+        # ttk.Button(self.root, text=theme_btn_text, command=self.toggle_theme).pack(pady=5)
 
         self.countdown()
 
