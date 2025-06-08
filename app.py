@@ -127,7 +127,7 @@ class QuizApp:
         self.style = ttk.Style()
         # self.dark_mode = False
 
-        self.apply_theme()
+        # self.apply_theme()
         self.show_welcome_screen()
 
     # def apply_theme(self):
