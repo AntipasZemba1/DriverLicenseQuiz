@@ -5,7 +5,7 @@ This is a bilingual (English and French) multiple-choice quiz application design
 ## 📦 Features
 
 - 👤 User input form (First Name, Last Name, ID Number, Age)
-- 🌐 Language selection: English 🇺🇸or French 🇫🇷
+- 🌐 Language selection: English 🇺🇸 or French 🇫🇷
 - 🧠 20 randomized multiple-choice driving questions
 - ⏱️ Countdown timer (30 seconds) for each question
 - 📊 Real-time progress bar
