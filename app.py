@@ -107,3 +107,22 @@ questions = [
              {"A": "0.02%", "B": "0.05%", "C": "0.08%", "D": "0.10%"},
              "C", "Alcohol & Driving")
 ]
+
+# Main Quiz GUI App
+class QuizApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Driving License Quiz")
+        self.user = None
+        self.language = "en"
+        self.questions = questions.copy()
+        random.shuffle(self.questions)
+        self.score = 0
+        self.current_q = 0
+        self.selected_answer = tk.StringVar()
+        self.time_limited = 30
+        self.remaining_time = self.time_limit
+        self.question_active = False
+        self.progress_var = tk.DoubleVar()
+        self.style = ttk.Style()
+        self.dark_mode = False
