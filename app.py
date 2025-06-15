@@ -27,8 +27,8 @@ class Question:
 # Sample questions
 questions = [
     Question("What does a red traffic light mean?", "Que signifie un feu rouge ?",
-             {"A": "Go", "B": "Stop", "C": "Slow down", "D": "Turn left"},
-             {"A": "Avancer", "B": "Arrêter", "C": "Ralentir", "D": "Tourner à gauche"},
+             {"A": "Go", "B": "Stop completely", "C": "Slow down", "D": "Turn left"},
+             {"A": "Avancer", "B": "Arrêter Completement", "C": "Ralentir", "D": "Tourner à gauche"},
              "B", "Traffic Lights"),
     Question("When is it legal to use a mobile phone while driving?", "Quand est-il légal d'utiliser un téléphone au volant ?",
              {"A": "Hands-free", "B": "At red light", "C": "Never", "D": "While driving slowly"},
